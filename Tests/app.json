@@ -11,7 +11,14 @@
   "help": "https://bcility.com/about-us/",
   "url": "https://bcility.com",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "0d4b4898-08f9-40cd-93d5-47297c4c3a05",
+      "name": "PTE-Application-Template",
+      "publisher": "BCILITY",
+      "version": "1.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "24.0.0.0",
