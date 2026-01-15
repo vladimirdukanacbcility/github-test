@@ -1,0 +1,6 @@
+# Default owner for all files
+* @bcility-doo/management
+
+# Pipelines
+.AL-GO/* @StefanSosic
+.github/* @StefanSosic

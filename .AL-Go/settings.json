@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v7.3/.Modules/settings.schema.json",
+  "country": "w1",
+  "appFolders": [ "Application" ],
+  "testFolders": [ "Tests" ],
+  "githubRunner": "self-hosted",
+  "bcptTestFolders": [],
+  "enableCodeCop": true,
+  "versioningStrategy": 3
+}
