@@ -1,7 +1,9 @@
 ### AL ###
 #Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
+#launch.json folder - keep template files but ignore local overrides
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
 #Cache folder
 .alcache/
 #Symbols folder

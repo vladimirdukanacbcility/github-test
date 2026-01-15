@@ -1,0 +1,35 @@
+{
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${PerTenantExtensionCop}",
+        "${UICop}"
+    ],
+    "al.backgroundCodeAnalysis": true,
+    "al.assemblyProbingPaths": [],
+    "al.packageCachePath": ".alpackages",
+    "al.ruleSetPath": "./main.ruleset.json",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "[al]": {
+        "editor.defaultFormatter": "ms-dynamics-smb.al",
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            120
+        ]
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.alpackages": true,
+        "**/.alcache": true,
+        "**/.output": true,
+        "**/.snapshots": true
+    },
+    "search.exclude": {
+        "**/.alpackages": true,
+        "**/.alcache": true,
+        "**/.output": true,
+        "**/.snapshots": true
+    }
+}
