@@ -43,7 +43,8 @@ codeunit 80000 "Sample Management"
     var
         SampleTable: Record "Sample Table";
     begin
-        if SampleTable.Get(Code) then
+        SampleTable.SetRange("Code", Code);
+        if SampleTable.FindFirst() then
             exit(SampleTable.Description);
         exit('');
     end;

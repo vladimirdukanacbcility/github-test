@@ -58,10 +58,11 @@ page 80000 "Sample List"
 
                 trigger OnAction()
                 var
-                    SampleMgt: Codeunit "Sample Management";
+                    SampleTable: Record "Sample Table";
                 begin
-                    SampleMgt.CreateEntry('SAMPLE', 'Sample Entry');
-                    CurrPage.Update(false);
+                    SampleTable.Init();
+                    if Page.RunModal(Page::"Sample Card", SampleTable) = Action::LookupOK then
+                        CurrPage.Update(false);
                 end;
             }
         }
