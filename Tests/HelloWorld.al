@@ -18,7 +18,9 @@ codeunit 80100 "Sample Tests"
         EntryNo := SampleMgt.CreateEntry('TEST001', 'Test Description');
 
         // [THEN] The entry should be created successfully
-        SampleTable.Get(EntryNo);
+        SampleTable.SetRange("Entry No.", EntryNo);
+        if not SampleTable.FindFirst() then
+            Error('Entry was not created');
         if SampleTable."Code" <> 'TEST001' then
             Error('Code was not set correctly');
         if SampleTable.Description <> 'Test Description' then
